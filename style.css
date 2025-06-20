@@ -1,0 +1,387 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #fff0f5;
+  margin: 0;
+  padding: 20px;
+}
+
+
+.card {
+  background-color: #ffeef5;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+  flex-wrap: wrap; /* agar responsif saat layar kecil */
+}
+
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #ffc0cb;
+  object-fit: cover;
+}
+
+.info {
+  flex-grow: 1;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d63384;
+}
+
+.description {
+  color: #6c3483;
+}
+
+.ribbon {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ffc0cb;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  transform: rotate(15deg);
+}
+
+.intro {
+  margin-top: 30px;
+  background-color: #ffeef5;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: #d63384;
+}
+
+.next-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 24px;
+  background-color: #ff69b4;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffeef5;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+}
+
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #ffc0cb;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.info {
+  text-align: center;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d63384;
+}
+
+.description {
+  color: #6c3483;
+}
+
+.ribbon {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ffc0cb;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  transform: rotate(15deg);
+}
+
+.intro {
+  background-color: #ffeef5;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: #d63384;
+  max-width: 600px;
+  width: 100%;
+}
+
+.next-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 24px;
+  background-color: #ff69b4;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.gallery-title {
+  text-align: center;
+  font-size: 24px;
+  color: #d63384;
+  margin: 40px 0 20px;
+  font-weight: bold;
+}
+
+.gallery-box {
+  width: 100%;
+  max-width: 600px;
+  background: #fff0f5;
+  padding: 10px;
+  border-radius: 16px;
+  margin: 20px auto;
+  overflow-x: auto;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.gallery-scroll {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.gallery-scroll img {
+  width: 200px;
+  height: 150px;
+  border-radius: 12px;
+  object-fit: cover;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+.back-link {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.back-link a {
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bottom-nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.nav-btn {
+  display: inline-block;
+  background-color: #ffd6e8; /* pink soft */
+  color: #e91e63;
+  font-size: 22px;
+  padding: 14px 18px;
+  margin: 0 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-btn:hover {
+  background-color: #ffc0cb;
+  color: white;
+  transform: scale(1.15) rotate(-3deg);
+}
+
+/* Buat bentuk love efek visual */
+.nav-btn::after {
+  content: '❤';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 14px;
+  color: #ff7aa2;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.nav-btn:hover::after {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.scroll-gallery {
+  max-width: 600px;
+  margin: 30px auto;
+  max-height: 600px;
+  overflow-y: auto;
+  padding: 10px;
+  background: #fff0f5;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255,192,203,0.3);
+}
+
+.scroll-photo {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.scroll-photo img {
+  width: 85%;
+  border-radius: 15px;
+  border: 4px dashed #ff69b4;
+  padding: 10px;
+  background: linear-gradient(135deg, #ffe4ec, #ffe4f0);
+  box-shadow: 0 0 10px rgba(255,182,193,0.4);
+  transition: transform 0.3s ease;
+}
+
+.scroll-photo img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.scroll-gallery {
+  max-width: 600px;
+  margin: 30px auto;
+  max-height: 600px;
+  overflow-y: auto;
+  padding: 10px;
+  background: #fff0f5;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255,192,203,0.3);
+}
+
+.scroll-photo {
+  margin: 20px 0;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.scroll-photo img {
+  width: 85%;
+  border-radius: 25px;
+  border: 4px dashed #ff69b4;
+  padding: 12px;
+  background: linear-gradient(135deg, #ffe4ec, #ffe4f0);
+  box-shadow: 0 0 15px rgba(255,182,193,0.4);
+  transition: all 0.4s ease;
+}
+
+/* Hover lucu gemes */
+.scroll-photo:hover {
+  transform: rotate(-1.5deg) scale(1.02);
+}
+
+.scroll-photo img:hover {
+  transform: scale(1.07) rotate(1deg);
+  box-shadow: 0 0 18px rgba(255,105,180, 0.6), 0 0 10px rgba(255,182,193, 0.3);
+  filter: brightness(1.1) saturate(1.3);
+  cursor: pointer;
+}
+.scroll-gallery {
+  max-width: 500px;
+  margin: 30px auto;
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 10px;
+  background: #fff0f5;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255,192,203,0.3);
+}
+
+.scroll-photo {
+  margin: 15px 0;
+  text-align: center;
+  position: relative;
+}
+
+.photo-frame {
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(145deg, #ffe6f0, #ffc8dc);
+  padding: 10px;
+  border-radius: 25px;
+  border: 3px dotted #ff69b4;
+  box-shadow: 0 0 12px rgba(255, 182, 193, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.photo-frame:hover {
+  transform: scale(1.05) rotate(-1.5deg);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+}
+
+.photo-frame img {
+  width: 200px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.photo-frame img:hover {
+  transform: scale(1.03);
+  filter: brightness(1.1) saturate(1.2);
+}
+
+.love {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  font-size: 24px;
+  animation: pulse 1.5s infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+/* Tombol ke halaman 4 */
+.back {
+  display: inline-block;
+  margin-top: 25px;
+  text-decoration: none;
+  background: #ffb6c1;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255,182,193,0.3);
+}
+
+.back:hover {
+  background: #ff69b4;
+  transform: scale(1.05);
+}
+
+
